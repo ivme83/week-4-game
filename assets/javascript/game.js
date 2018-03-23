@@ -16,16 +16,15 @@ var Card = function (n, hp, ap, cap, imgSrc){
         colSlot.append('<div class="panel-footer">HP:' + this.healthPoints +'</div>');
         colSlot.append('</div>');*/
 
-        colSlot.append('<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">'+this.name+'</h3></div><div class="panel-body">Image Goes Here</div><div class="panel-footer">HP:'+this.healthPoints+'</div></div>');
+        colSlot.append('<div class="panel panel-default"><div class="panel-heading"><h3 class="panel-title">'+this.name+'</h3></div><div class="panel-body"><img src="'+this.imageSource+'" class="img-responsive"></div><div class="panel-footer">HP:'+this.healthPoints+'</div></div>');
     }
-
     
 };
 
-var obiWan = new Card("Obi Wan", 10, 15, 20, "");
-var darthMaul = new Card("Darth Maul", 20, 10, 5, "");
-var palpatine = new Card("Palpatine", 15, 30, 12, "");
-var luke = new Card("Luke", 5, 10, 10, "");
+var obiWan = new Card("Obi Wan", 10, 15, 20, "assets/images/luke.jpg");
+var darthMaul = new Card("Darth Maul", 20, 10, 5, "assets/images/luke.jpg");
+var palpatine = new Card("Palpatine", 15, 30, 12, "assets/images/luke.jpg");
+var luke = new Card("Luke", 5, 10, 10, "assets/images/luke.jpg");
 
 luke.drawCard(1);
 obiWan.drawCard(2);
