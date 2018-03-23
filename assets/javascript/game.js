@@ -35,7 +35,7 @@ var Card = function (n, hp, ap, cap, imgSrc){
             '<div class="panel-body">'+
             '<img src="'+this.imageSource+'" class="img-responsive">'+
             '</div>'+
-            '<div class="panel-footer text-center"><span class="badge">HP:'+this.healthPoints+'</span><span class="badge">AP:'+this.attackPower+'</span><span class="badge">CAP:'+this.counterAP+'</span></div>'+
+            '<div class="panel-footer text-center"><span class="badge">HP:'+this.healthPoints+'</span>  <span class="badge">AP:'+this.attackPower+'</span>  <span class="badge">CAP:'+this.counterAP+'</span></div>'+
             '</div>');
 
         this.currentSlot = this.newSlot;
@@ -48,11 +48,6 @@ var obiWan = new Card("Obi Wan", 10, 15, 20, "assets/images/obiwan.jpg");
 var darthMaul = new Card("Darth Maul", 20, 10, 5, "assets/images/darthmaul.jpeg");
 var darthSidious = new Card("Palpatine", 15, 30, 12, "assets/images/darthsidious.jpg");
 var luke = new Card("Luke", 5, 10, 10, "assets/images/luke.jpg");
-
-luke.drawCard(1, 1);
-obiWan.drawCard(2, 1);
-darthSidious.drawCard(3, 1);
-darthMaul.drawCard(4, 1);
 
 
 
@@ -76,3 +71,8 @@ var game = {
 
     },
 }
+
+    luke.drawCard(1, 1);
+    obiWan.drawCard(2, 1);
+    darthSidious.drawCard(3, 1);
+    darthMaul.drawCard(4, 1);
