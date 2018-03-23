@@ -7,3 +7,7 @@
 body {
     background: teal;
 }
+
+.panel-body {
+    height: 150px;
+}
