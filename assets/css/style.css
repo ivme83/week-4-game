@@ -11,3 +11,17 @@ body {
 .panel-body {
     height: 150px;
 }
+
+/* The animation code 
+@keyframes example {
+    0%   {left:-800px; top:0px;}
+    100%  {left:0px; top:0px;}
+}
+
+/* The element to apply the animation to 
+.panel {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+}*/
